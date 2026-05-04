@@ -107,7 +107,39 @@ body {
   to   { left: 110%; }
 }
 
+/* Birds */
+.bird {
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+.bird-1 { animation: fly-bird 20s linear infinite; top: 15%; }
+.bird-2 { animation: fly-bird 25s linear infinite 5s; top: 25%; font-size: 1.2rem; }
+.bird-3 { animation: fly-bird 22s linear infinite 12s; top: 10%; font-size: 1.8rem; }
 
+@keyframes fly-bird {
+  from { left: -10%; transform: translateY(0px); }
+  25%  { transform: translateY(-15px); }
+  50%  { transform: translateY(10px); }
+  75%  { transform: translateY(-5px); }
+  to   { left: 110%; transform: translateY(0px); }
+}
+
+/* Balloons */
+.balloon {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 2;
+  opacity: 0.9;
+}
+.balloon-1 { animation: float-balloon 35s linear infinite 2s; bottom: 80px; }
+.balloon-2 { animation: float-balloon 45s linear infinite 15s; bottom: 40px; font-size: 2rem; }
+
+@keyframes float-balloon {
+  from { left: -10%; transform: translateY(50vh) rotate(-5deg); }
+  50%  { transform: translateY(10vh) rotate(5deg); }
+  to   { left: 110%; transform: translateY(-20vh) rotate(-5deg); }
+}
 
 /* Grass Strip */
 .grass-strip {
