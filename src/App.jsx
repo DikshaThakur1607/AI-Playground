@@ -133,11 +133,6 @@ function AppInner() {
         <div className="cloud cloud-3" />
         <div className="cloud cloud-4" />
 
-        {/* Birds */}
-        <div className="bird bird-1">🐦</div>
-        <div className="bird bird-2">🐦</div>
-        <div className="bird bird-3">🕊️</div>
-
         {/* Hot Air Balloons */}
         <div className="balloon balloon-1">🎈</div>
         <div className="balloon balloon-2">🎈</div>
