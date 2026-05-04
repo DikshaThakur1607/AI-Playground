@@ -1,17 +1,53 @@
-# React + Vite
+# 🚀 RoboYard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**RoboYard** (formerly *playground.ai*) is a highly interactive, browser-based machine learning sandbox. It allows users to train custom image classification models directly in their browser using their webcam, without writing a single line of code! 
 
-Currently, two official plugins are available:
+Built with a playful "nature" theme and an emphasis on user experience, RoboYard runs entirely on the client side, meaning your data never leaves your computer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 Tech Stack
 
-## React Compiler
+This project was built using a modern, serverless frontend stack:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/) — utilized for building a modular component architecture with complex custom hooks.
+- **Machine Learning Engine:** [TensorFlow.js (@tensorflow/tfjs)](https://www.tensorflow.org/js) — powers the in-browser model training and inference.
+- **Base Model:** [MobileNet](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) — optimized for low-latency, high-accuracy edge computing.
+- **Build Tooling:** [Vite](https://vitejs.dev/) — ensures lightning-fast hot-module reloading and optimized production bundling.
+- **Styling & Animations:** Pure CSS3 — utilizing custom variables, complex `@keyframes` (for the environment), and `backdrop-filter` for glassmorphism.
+- **Particle System:** Native HTML5 `<canvas>` — for lightweight, zero-dependency confetti effects.
+- **Deployment:** [Vercel](https://vercel.com/) — for high-availability edge hosting.
 
-## Expanding the ESLint configuration
+## 🛠️ Getting Started / How to Clone
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# AI-Playground
+Want to run RoboYard locally on your machine? Follow these simple steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed on your computer.
+
+### Installation
+
+1. **Clone the repository:**
+   Open your terminal and run:
+   ```bash
+   git clone https://github.com/DikshaThakur1607/AI-Playground.git
+   ```
+
+2. **Navigate into the project folder:**
+   ```bash
+   cd AI-Playground
+   ```
+
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in your browser:**
+   Once the server starts, it will give you a local URL (usually `http://localhost:5173/`). Open that in your browser to start playing!
+
+---
+*Created as a technical showcase for applied machine learning and modern web design.*
