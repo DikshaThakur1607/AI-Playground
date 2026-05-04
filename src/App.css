@@ -114,16 +114,22 @@ body {
   z-index: 2;
   opacity: 0.9;
 }
-.balloon-1 { animation: float-balloon 35s linear infinite 2s; bottom: 80px; }
-.balloon-2 { animation: float-balloon 45s linear infinite 15s; bottom: 40px; font-size: 2rem; }
-.balloon-3 { animation: float-balloon 55s linear infinite 5s; bottom: 120px; font-size: 1.5rem; opacity: 0.7; }
-.balloon-4 { animation: float-balloon 40s linear infinite 25s; bottom: 60px; font-size: 2.5rem; }
-.balloon-5 { animation: float-balloon 60s linear infinite 10s; bottom: 150px; font-size: 1.2rem; opacity: 0.5; }
+.balloon-1 { animation: float-balloon-lr 35s linear infinite 2s; bottom: 80px; }
+.balloon-2 { animation: float-balloon-rl 45s linear infinite 15s; bottom: 40px; font-size: 2rem; }
+.balloon-3 { animation: float-balloon-lr 55s linear infinite 5s; bottom: 120px; font-size: 1.5rem; opacity: 0.7; }
+.balloon-4 { animation: float-balloon-rl 40s linear infinite 25s; bottom: 60px; font-size: 2.5rem; }
+.balloon-5 { animation: float-balloon-lr 60s linear infinite 10s; bottom: 150px; font-size: 1.2rem; opacity: 0.5; }
 
-@keyframes float-balloon {
+@keyframes float-balloon-lr {
   from { left: -10%; transform: translateY(50vh) rotate(-5deg); }
   50%  { transform: translateY(10vh) rotate(5deg); }
   to   { left: 110%; transform: translateY(-20vh) rotate(-5deg); }
+}
+
+@keyframes float-balloon-rl {
+  from { left: 110%; transform: translateY(50vh) rotate(5deg); }
+  50%  { transform: translateY(10vh) rotate(-5deg); }
+  to   { left: -10%; transform: translateY(-20vh) rotate(5deg); }
 }
 
 /* Grass Strip */
