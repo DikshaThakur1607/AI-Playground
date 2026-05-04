@@ -136,6 +136,9 @@ function AppInner() {
         {/* Hot Air Balloons */}
         <div className="balloon balloon-1">🎈</div>
         <div className="balloon balloon-2">🎈</div>
+        <div className="balloon balloon-3">🎈</div>
+        <div className="balloon balloon-4">🎈</div>
+        <div className="balloon balloon-5">🎈</div>
       </div>
 
       {/* ── Grass strip at bottom ── */}
