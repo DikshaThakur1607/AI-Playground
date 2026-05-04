@@ -5,7 +5,6 @@ import TrainingPanel from './components/TrainingPanel';
 import PredictionPanel from './components/PredictionPanel';
 import VisualizationPanel from './components/VisualizationPanel';
 import Confetti from './components/Confetti';
-import TenorBird from './components/TenorBird';
 import { ToastProvider, useToast } from './components/Toast';
 import { useTeachableMachine } from './hooks/useTeachableMachine';
 import './App.css';
@@ -133,11 +132,6 @@ function AppInner() {
         <div className="cloud cloud-2" />
         <div className="cloud cloud-3" />
         <div className="cloud cloud-4" />
-
-        {/* Flying Tenor Birds */}
-        <TenorBird className="bird bird-1" />
-        <TenorBird className="bird bird-2" />
-        <TenorBird className="bird bird-3" />
 
         {/* Hot Air Balloons */}
         <div className="balloon balloon-1">🎈</div>
